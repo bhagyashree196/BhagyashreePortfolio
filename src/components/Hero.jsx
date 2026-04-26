@@ -2,15 +2,14 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-4 pt-20">
+    <section className="relative min-h-[90vh] flex flex-col justify-center items-center text-center px-4 pt-24 md:pt-32 pb-16">
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="w-32 h-32 md:w-40 md:h-40 rounded-full glass-card p-2 mb-8 mx-auto"
+        className="w-32 h-32 md:w-40 md:h-40 rounded-full glass-card p-2 mb-6 sm:mb-8 mx-auto shadow-2xl"
       >
-        <div className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden flex justify-center items-center">
-          {/* Placeholder for Photo */}
+        <div className="w-full h-full rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden flex justify-center items-center shadow-inner">
           <img src="/certificates/Bhagya.png" alt="Bhagyashree Profile" className="w-full h-full object-cover" />
         </div>
       </motion.div>
@@ -19,9 +18,9 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="inline-flex items-center px-3 py-1 rounded-full glass border border-brand-500/30 text-brand-600 dark:text-brand-400 text-sm font-semibold mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]"
+        className="inline-flex items-center px-4 py-1.5 rounded-full glass border border-brand-500/30 text-brand-600 dark:text-brand-400 text-sm font-semibold mb-6 shadow-[0_0_15px_rgba(59,130,246,0.2)]"
       >
-        <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse mr-2"></span>
+        <span className="w-2 h-2 rounded-full bg-brand-500 animate-pulse mr-2.5"></span>
         Available for new opportunities
       </motion.div>
 
@@ -29,10 +28,10 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white"
+        className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900 dark:text-white leading-tight md:leading-tight"
       >
         Hello, I'm{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600 dark:from-brand-400 dark:to-purple-400">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600 dark:from-brand-400 dark:to-purple-400 block sm:inline">
           Bhagyashree
         </span>
       </motion.h1>
@@ -41,7 +40,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.6 }}
-        className="max-w-2xl text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10"
+        className="max-w-2xl text-base sm:text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-10 px-2"
       >
         A passionate Full-Stack Developer bridging the gap between sophisticated engineering and intuitive design. I build scalable web & AI solutions.
       </motion.p>
@@ -50,7 +49,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.8 }}
-        className="flex flex-col sm:flex-row items-center gap-4"
+        className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto px-4"
       >
         <a href="#projects" className="w-full sm:w-auto">
           <motion.div

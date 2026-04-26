@@ -23,7 +23,7 @@ export default function Skills() {
           Core Skills
         </h2>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
@@ -32,7 +32,7 @@ export default function Skills() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
               whileHover={{ scale: 1.05 }}
-              className="glass p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center space-x-4 cursor-pointer hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/10 transition-all group"
+              className="glass p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex items-center space-x-4 hover:border-emerald-500/50 hover:shadow-lg hover:shadow-emerald-500/10 transition-all group"
             >
               <div className="w-12 h-12 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-bold text-xl group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/30 transition-colors">
                 {skill.name.charAt(0)}

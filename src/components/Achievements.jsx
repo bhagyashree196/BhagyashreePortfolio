@@ -30,9 +30,9 @@ export default function Achievements() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.5 }}
               whileHover={{ scale: 1.02, x: 5 }}
-              className={`glass flex items-center p-5 rounded-2xl border ${item.border} hover:shadow-lg transition-all group cursor-default`}
+              className={`glass flex items-center p-4 sm:p-5 rounded-2xl border ${item.border} hover:shadow-lg transition-all group cursor-default`}
             >
-              <div className={`w-14 h-14 rounded-xl ${item.bg} ${item.color} flex items-center justify-center text-2xl mr-5 group-hover:scale-110 transition-transform`}>
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl ${item.bg} ${item.color} flex shrink-0 items-center justify-center text-xl sm:text-2xl mr-4 sm:mr-5 group-hover:scale-110 transition-transform`}>
                 {item.icon}
               </div>
               <h3 className="font-semibold text-lg text-slate-800 dark:text-slate-200 group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">

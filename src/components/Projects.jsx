@@ -38,7 +38,7 @@ export default function Projects() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -57,7 +57,7 @@ export default function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
 
-              <div className="p-6 flex-1 flex flex-col">
+              <div className="p-5 sm:p-6 flex-1 flex flex-col">
                 <div className="flex justify-between items-start mb-4">
                   <h3 className="text-xl font-bold text-slate-900 dark:text-white">
                     {project.title}

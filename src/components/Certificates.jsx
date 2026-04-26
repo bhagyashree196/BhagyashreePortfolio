@@ -13,7 +13,7 @@ const certificates = [
     id: 2,
     title: "Internship - CodeFT Pvt Ltd",
     description: "Completed a 1.5-month internship gaining hands-on experience in real-world development, teamwork, and project execution.",
-    file: "/certificates/NVDIACertificate.pdf", // Assuming placeholder based on prev code
+    file: "/certificates/CodeFTInternship.jpeg", // Assuming placeholder based on prev code
     icon: "CodeFT",
     bg: "bg-blue-600 dark:bg-blue-600/20 text-blue-600 shadow-blue-600/30"
   },
